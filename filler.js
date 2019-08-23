@@ -1,4 +1,4 @@
-        var fillForm = function ()
+var fillForm = function ()
         {
             var inputs = $("input");
             for (var i = 0; i < inputs.length; i++)
@@ -33,6 +33,7 @@
             {
                 var input = $(inputs[i]);
                 var number = Math.floor(Math.random() * input.find("option").length);
-                input.val(number);
+                input.prop(number);
+console.log(number);
             }
         }
