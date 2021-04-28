@@ -60,6 +60,17 @@ var fillForm = function ()
                     }
                     input.val(result);
                 }
+                         else if (input.attr("type") == "tel")
+                {
+                    var result = '0535';
+                    var characters = '123456789';
+                    var charactersLength = characters.length;
+                    for (var y = 0; y < 8; y++)
+                    {
+                        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                    }
+                    input.val(result);
+                }
             }
             var inputs = $("textarea");
             for (var i = 0; i < inputs.length; i++)
