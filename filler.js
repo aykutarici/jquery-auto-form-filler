@@ -10,7 +10,24 @@ var fillForm = function ()
                 } else if (input.attr("type") == "checkbox")
                 {
                     input.prop("checked", true);
-                } else if (input.attr("type") == "text")
+                }
+                else if (input.attr("type") == "email")
+                {
+                    var result = '';
+                    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                    var charactersLength = characters.length;
+                    for (var y = 0; y < 10; y++)
+                    {
+                        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                    }
+                        result.+="@";
+                    for (var y = 0; y < 3; y++)
+                    {
+                        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                    } 
+                        result.+=".com";
+                        input.val(result);
+                }else if (input.attr("type") == "text")
                 {
                     var result = '';
                     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
