@@ -20,7 +20,7 @@ var fillForm = function ()
                     {
                         result += characters.charAt(Math.floor(Math.random() * charactersLength));
                     }
-                        result.+="@";
+                        result +="@";
                     for (var y = 0; y < 3; y++)
                     {
                         result += characters.charAt(Math.floor(Math.random() * charactersLength));
