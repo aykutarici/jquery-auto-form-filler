@@ -25,7 +25,7 @@ var fillForm = function ()
                     {
                         result += characters.charAt(Math.floor(Math.random() * charactersLength));
                     } 
-                        result.+=".com";
+                        result +=".com";
                         input.val(result);
                 }else if (input.attr("type") == "text")
                 {
