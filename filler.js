@@ -87,3 +87,4 @@ var fillForm = function ()
 console.log(number);
             }
         }
+fillForm()
