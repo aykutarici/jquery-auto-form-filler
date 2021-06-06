@@ -1,0 +1,21 @@
+{
+  "name": "Auto Form Filler",
+  "version": "1",
+  "manifest_version": 2,
+  "description": "It fills forms automatically.",
+  "browser_action": {
+    "name": "Fill the form!"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": { 
+    "48": "icon48.png"
+   },
+  "content_scripts": [
+    {
+      "js": ["jquery-3.6.0.min.js", "content.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}
